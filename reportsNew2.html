@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NCR - Reports</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+   
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="dashboard.html">NCR - Iraq</a>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+  <div class="navbar-nav">
+    <div class="nav-item text-nowrap">
+      <a class="nav-link px-3" href="login.html">Sign out</a>
+    </div>
+  </div>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="position-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link " href="#">
+              <span data-feather="home"></span>
+              Dashboard
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link active "  aria-current="page" href="reports.html">
+              <span data-feather="bar-chart-2"></span>
+              Reports
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  aria-current="page" href="findings.html">
+              <span data-feather="bar-chart-2"></span>
+              Report Findings
+            </a>
+          </li>
+          
+        </ul>
+
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span>Settings</span>
+          <a class="link-secondary" href="#" aria-label="Add a new report">
+            <span data-feather="plus-circle"></span>
+          </a>
+        </h6>
+        <ul class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link " href="operators.html">
+              <span data-feather="users"></span>
+              Operators
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="area.html">
+              <span data-feather="layers"></span>
+              Area Of Surveillance
+            </a>
+          </li>
+          </li>
+        </ul>
+        <p class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">Developed by <a href="https://midrma.com" class="text-black">MIDRMA</a>.</p>
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">NCR Report - NON-CONFORMITY/  DEFICIENCY DETAILS</h1>
+      </div>
+
+      <div class="col-md-7 col-lg-8">
+
+        
+        <form class="needs-validation p-2" novalidate="" action="reports.html">  
+
+            
+            <div class="row g-3 bg-light">
+              <div class="col-12">
+              <label class="form-label fw-bold">Audit Finding 1</label>
+            </div>
+            <div class="col-12">
+              <label class="form-label fw-bold">Description</label>
+              <input type="text" class="form-control" id="" placeholder="">
+            </div>
+            <div class="col-12">
+              <label class="form-label fw-bold">Level</label>
+            </div>
+            <div class="my-3">
+            <div class="form-check">
+              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+              <label class="form-check-label" for="credit">Level 1: significant non – conformity</label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+              <label class="form-check-label" for="debit">Level 2: non – conformity</label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+              <label class="form-check-label" for="debit">Observation</label>
+            </div>
+          </div>
+            <div class="col-12">
+              <label class="form-label fw-bold">Attachment</label>
+              <input type="file" class="form-control" id="">
+            </div>
+          </div>
+
+          <div class="row g-3 bg-light mt-2" hidden id="moreFind1">
+              <div class="col-12">
+              <label class="form-label fw-bold">Audit Finding 2</label>
+            </div>
+            <div class="col-12">
+              <label class="form-label fw-bold">Description</label>
+              <input type="text" class="form-control" id="" placeholder="">
+            </div>
+            <div class="col-12">
+              <label class="form-label fw-bold">Level</label>
+            </div>
+            <div class="my-3">
+            <div class="form-check">
+              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+              <label class="form-check-label" for="credit">Level 1: significant non – conformity</label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+              <label class="form-check-label" for="debit">Level 2: non – conformity</label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+              <label class="form-check-label" for="debit">Observation</label>
+            </div>
+          </div>
+            <div class="col-12">
+              <label class="form-label fw-bold">Attachment</label>
+              <input type="file" class="form-control" id="">
+            </div>
+          </div>
+
+          <div class="row align-items-end mt-3">
+    <div class="col"><button class="w-30 btn btn-primary" id="addMoreButton" type="submit" onclick="return addMOre();">Add More findings</button>
+    </div>
+    <div class="col align-items-end"> <button class="w-30 btn btn-danger" type="submit">Submit the report</button>
+    </div>
+  </div>
+
+          
+         
+        </form>
+      </div>
+
+  
+    </main>
+  </div>
+</div>
+
+
+</div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
+    <script src="dashboard.js"></script>
+    <script type="text/javascript">
+      function addMOre(){
+        document.getElementById('moreFind1').removeAttribute('hidden');
+        return false;
+      }
+    </script>
+  </body>
+</html>
